@@ -6,7 +6,7 @@ GO
 CREATE TABLE ##PickedNumbers(PickOrder INT, PickedNumber INT, IsSampleData INT)
 
 -- Can't use identity col this time around as we are transposing row data into column.
-CREATE TABLE ##BingoBoards (BoardNumber INT, RowID INT, ColumnIndex INT, ColumnValue INT, IsSampleData INT, INDEX idx_filtered NONCLUSTERED (ColumnIndex, RowID, ColumnValue, IsSampleData))
+CREATE TABLE ##BingoBoards (BoardNumber INT, RowID INT, ColumnIndex INT, ColumnValue INT, IsSampleData INT)
 GO
 
 -----------------------------------  First Load Sample Data --------------------------------------------
